@@ -58,6 +58,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
         + " 2> " +  RESULTS_FOLDER
         + "/" + benchmark + ".txt"
     )
+    print(command)
     os.system(command)
 
     
