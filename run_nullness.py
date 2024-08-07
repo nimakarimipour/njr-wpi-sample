@@ -53,7 +53,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
         + " " + COMPILED_CLASSES_FOLDER
         + " " + "-Xmaxerrs 100000" 
         + " " + "-J-Xmx32G"
-        + " " + " -cp " + lib_folder 
+        + " -cp " + lib_folder 
         + " @" + SRC_FILES
         + " 2> " +  RESULTS_FOLDER
         + "/" + benchmark + ".txt"
