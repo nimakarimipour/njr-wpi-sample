@@ -47,6 +47,7 @@ for benchmark in os.listdir(BENCHMARKS_FOLDER):
         + " " + CF_COMMAND
         + " " + "-AassumePure"
         + " " + "-Adetailedmsgtext"
+        # comment to exclude stubs
         + " " + "-Aajava=" + "stubs/{}".format(benchmark)
         + " " + "-d"
         + " " + COMPILED_CLASSES_FOLDER
