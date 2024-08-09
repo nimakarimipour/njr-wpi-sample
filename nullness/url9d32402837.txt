@@ -1,169 +1,386 @@
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:30: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull King $$ ( 681, 685 ) $$ incompatible types in assignment.
-	private King king = null;
-	                    ^
-  found   : null (NullType)
-  required: @Initialized @NonNull King
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:32: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Player $$ ( 716, 720 ) $$ incompatible types in assignment.
-	private Player opponent = null;
-	                          ^
-  found   : null (NullType)
-  required: @Initialized @NonNull Player
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:103: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull King $$ ( 1809, 1813 ) $$ incompatible types in assignment.
-		king = null;
-		       ^
-  found   : null (NullType)
-  required: @Initialized @NonNull King
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:136: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Player $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Player this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 2189, 2199 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Player
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Player this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/MoveTest.java:17: error: (initialization.field.uninitialized) $$ 1 $$ blackKing $$ ( 260, 283 ) $$ the default constructor does not initialize field blackKing
-	private King blackKing;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/MoveTest.java:19: error: (initialization.field.uninitialized) $$ 1 $$ whiteKing $$ ( 287, 310 ) $$ the default constructor does not initialize field whiteKing
-	private King whiteKing;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/MoveTest.java:20: error: (initialization.field.uninitialized) $$ 1 $$ whiteRook $$ ( 312, 335 ) $$ the default constructor does not initialize field whiteRook
-	private Rook whiteRook;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/King.java:90: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull King $$ @Initialized @NonNull boolean equals(@Initialized @NonNull King this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 1672, 1682 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull King
-    @Initialized @NonNull boolean equals(@Initialized @NonNull King this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Piece.java:24: error: (argument) $$ 4 $$ piece $$ Player.addPiece $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece $$ @Initialized @NonNull Piece $$ ( 390, 394 ) $$ incompatible argument for parameter piece of Player.addPiece.
-		player.addPiece(this);
-		                ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:81: error: (method.invocation) $$ 3 $$ getPlayer() $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece $$ @Initialized @NonNull Piece $$ ( 1432, 1449 ) $$ call to getPlayer() not allowed on the given receiver.
+		if (this != piece.getPlayer()) {
+		                           ^
   found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece
   required: @Initialized @NonNull Piece
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Piece.java:50: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Piece $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Piece this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 824, 834 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Piece
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Piece this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Rook.java:85: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Rook $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Rook this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 1492, 1502 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Rook
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Rook this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Position.java:53: error: (return) $$ 2 $$ @Initialized @Nullable Position $$ @Initialized @NonNull Position $$ ( 1062, 1097 ) $$ incompatible types in return.
-		return POSITIONS.get(Pair.of(column, row));
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:91: error: (initialization.field.write.initialized) $$ 1 $$ king $$ ( 1679, 1683 ) $$ storing values that are possibly under initialization in the field of initialized objects is not permitted
+			king = (King) piece;
+			^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Player.java:94: error: (argument) $$ 4 $$ arg0 $$ List.add $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece $$ @Initialized @NonNull Piece $$ ( 1720, 1725 ) $$ incompatible argument for parameter arg0 of List.add.
+		pieces.add(piece);
+		           ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece
+  required: @Initialized @NonNull Piece
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/King.java:28: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 440, 444 ) $$ dereference of possibly-null reference from
+		Column column = from.getColumn();
+		                ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Rook.java:48: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 841, 845 ) $$ dereference of possibly-null reference from
+			if (!row.equals(from.getRow())) 
+			                ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Rook.java:69: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 1214, 1218 ) $$ dereference of possibly-null reference from
+			if (!column.equals(from.getColumn())) 
+			                   ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Position.java:63: error: (dereference.of.nullable) $$ 1 $$ line $$ ( 1200, 1204 ) $$ dereference of possibly-null reference line
+		line = line.trim();
+		       ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:59: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 1000, 1004 ) $$ dereference of possibly-null reference from
+		if (!from.equals(situation.getPosition(piece))) {
+		     ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:64: error: (dereference.of.nullable) $$ 1 $$ piece $$ ( 1161, 1166 ) $$ dereference of possibly-null reference piece
+		List<Move> moves = piece.generateMoves(from);
+		                   ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:105: error: (dereference.of.nullable) $$ 1 $$ piece.getPlayer().getOpponent() $$ ( 2179, 2210 ) $$ dereference of possibly-null reference piece.getPlayer().getOpponent()
+			King otherKing = piece.getPlayer().getOpponent().getKing();
+			                                              ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:108: error: (dereference.of.nullable) $$ 1 $$ kingsLocation $$ ( 2300, 2313 ) $$ dereference of possibly-null reference kingsLocation
+			if (kingsLocation.equals(otherKingsLocation)) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:122: error: (dereference.of.nullable) $$ 1 $$ piece $$ ( 2522, 2527 ) $$ dereference of possibly-null reference piece
+		return piece.hashCode() + from.hashCode() + to.hashCode();
+		       ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:122: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 2541, 2545 ) $$ dereference of possibly-null reference from
+		return piece.hashCode() + from.hashCode() + to.hashCode();
+		                          ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:122: error: (dereference.of.nullable) $$ 1 $$ to $$ ( 2559, 2561 ) $$ dereference of possibly-null reference to
+		return piece.hashCode() + from.hashCode() + to.hashCode();
+		                                            ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:135: error: (dereference.of.nullable) $$ 1 $$ piece $$ ( 2726, 2731 ) $$ dereference of possibly-null reference piece
+			piece.equals(other.piece) &&
+			^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:136: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 2758, 2762 ) $$ dereference of possibly-null reference from
+			from.equals(other.from) &&
+			^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:137: error: (dereference.of.nullable) $$ 1 $$ to $$ ( 2788, 2790 ) $$ dereference of possibly-null reference to
+			to.equals(other.to);
+			^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Range.java:29: error: (dereference.of.nullable) $$ 1 $$ from $$ ( 647, 651 ) $$ dereference of possibly-null reference from
+		Column fromColumn = from.getColumn();
 		                    ^
-  type of expression: @Initialized @Nullable Position
-  method return type: @Initialized @NonNull Position
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Position.java:139: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Position $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Position this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 2448, 2458 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj) 
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Position
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Position this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Move.java:126: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Move $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Move this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 2613, 2623 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Move
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Move this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Range.java:142: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Range $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Range this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 2952, 2962 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Range
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Range this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:313: error: (argument) $$ 4 $$ from $$ King.generateMoves $$ @Initialized @Nullable Position $$ @Initialized @NonNull Position $$ ( 5928, 5932 ) $$ incompatible argument for parameter from of King.generateMoves.
-		List<Move> moves = king.generateMoves(from);
-		                                      ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Range.java:32: error: (dereference.of.nullable) $$ 1 $$ to $$ ( 719, 721 ) $$ dereference of possibly-null reference to
+		Column toColumn = to.getColumn();
+		                  ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Range.java:128: error: (argument) $$ 4 $$ arg0 $$ List.add $$ @Initialized @Nullable Position $$ @Initialized @NonNull Position $$ ( 2744, 2752 ) $$ incompatible argument for parameter arg0 of List.add.
+		positions.add(position);
+		              ^
   found   : @Initialized @Nullable Position
   required: @Initialized @NonNull Position
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:408: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Situation $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Situation this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 7471, 7481 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Situation
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Situation this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:161: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Column $$ ( 2530, 2534 ) $$ incompatible types in assignment.
-				currColumn = null;
-				             ^
-  found   : null (NullType)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:39: error: (dereference.of.nullable) $$ 1 $$ piece $$ ( 928, 933 ) $$ dereference of possibly-null reference piece
+			if (piece.equals(entry.getKey())) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:43: error: (dereference.of.nullable) $$ 1 $$ to $$ ( 990, 992 ) $$ dereference of possibly-null reference to
+			if (to.equals(entry.getValue())) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:79: error: (argument) $$ 4 $$ arg0 $$ Map.containsKey $$ @Initialized @Nullable Piece $$ @Initialized @NonNull Object $$ ( 1511, 1516 ) $$ incompatible argument for parameter arg0 of Map.containsKey.
+		if (pieces.containsKey(piece)) {
+		                       ^
+  found   : @Initialized @Nullable Piece
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:85: error: (argument) $$ 4 $$ arg0 $$ Map.containsValue $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1648, 1656 ) $$ incompatible argument for parameter arg0 of Map.containsValue.
+		if (pieces.containsValue(position)) {
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:101: error: (argument) $$ 4 $$ arg0 $$ Map.containsKey $$ @UnknownInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @Nullable Piece $$ @Initialized @NonNull Object $$ ( 1935, 1940 ) $$ incompatible argument for parameter arg0 of Map.containsKey.
+		if (!pieces.containsKey(piece)) {
+		                        ^
+  found   : @UnknownInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @Nullable Piece
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:105: error: (argument) $$ 4 $$ arg0 $$ Map.get $$ @UnknownInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece $$ @Initialized @NonNull Object $$ ( 2045, 2050 ) $$ incompatible argument for parameter arg0 of Map.get.
+		return pieces.get(piece);
+		                  ^
+  found   : @UnknownInitialization(cz.dusanrychnovsky.chessendgames.core.Piece.class) @NonNull Piece
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:117: error: (dereference.of.nullable) $$ 1 $$ position $$ ( 2222, 2230 ) $$ dereference of possibly-null reference position
+			if (position.equals(entry.getValue())) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:134: error: (dereference.of.nullable) $$ 1 $$ position $$ ( 2470, 2478 ) $$ dereference of possibly-null reference position
+			if (position.equals(entry.getValue())) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:185: error: (dereference.of.nullable) $$ 1 $$ player $$ ( 3523, 3529 ) $$ dereference of possibly-null reference player
+		for (Piece piece : player.getPieces())
+		                   ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:218: error: (dereference.of.nullable) $$ 1 $$ king $$ ( 4236, 4240 ) $$ dereference of possibly-null reference king
+		Player otherPlayer = king.getPlayer().getOpponent();
+		                     ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:219: error: (dereference.of.nullable) $$ 1 $$ otherPlayer $$ ( 4287, 4298 ) $$ dereference of possibly-null reference otherPlayer
+		King otherKing = otherPlayer.getKing();
+		                 ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:236: error: (dereference.of.nullable) $$ 1 $$ move.getTo() $$ ( 4618, 4630 ) $$ dereference of possibly-null reference move.getTo()
+				if (move.getTo().equals(kingsPosition) && move.isValid(this)) {
+				              ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Situation.java:312: error: (argument) $$ 4 $$ arg0 $$ Map.get $$ @Initialized @Nullable King $$ @Initialized @NonNull Object $$ ( 5881, 5885 ) $$ incompatible argument for parameter arg0 of Map.get.
+		Position from = pieces.get(king);
+		                           ^
+  found   : @Initialized @Nullable King
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:156: error: (override.return) $$ 6 $$ @Initialized @Nullable Column $$ @Initialized @NonNull Column $$ @Initialized @NonNull Column.@Initialized @NonNull BackwardIterator $$ @Initialized @Nullable Column next(@Initialized @NonNull Column.@Initialized @NonNull BackwardIterator this) $$ @Initialized @NonNull Iterator<@Initialized @NonNull Column> $$ @Initialized @NonNull Column next(@Initialized @NonNull Iterator<@Initialized @NonNull Column> this) $$ ( 2421, 2427 ) $$ Incompatible return type.
+		public Column next() 
+		       ^
+  found   : @Initialized @Nullable Column
   required: @Initialized @NonNull Column
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:214: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Column $$ ( 3469, 3473 ) $$ incompatible types in assignment.
-				currColumn = null;
-				             ^
-  found   : null (NullType)
+  Consequence: method in @Initialized @NonNull Column.@Initialized @NonNull BackwardIterator
+    @Initialized @Nullable Column next(@Initialized @NonNull Column.@Initialized @NonNull BackwardIterator this)
+  cannot override method in @Initialized @NonNull Iterator<@Initialized @NonNull Column>
+    @Initialized @NonNull Column next(@Initialized @NonNull Iterator<@Initialized @NonNull Column> this)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:160: error: (dereference.of.nullable) $$ 1 $$ currColumn $$ ( 2482, 2492 ) $$ dereference of possibly-null reference currColumn
+			if (currColumn.equals(toColumn)) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:209: error: (override.return) $$ 6 $$ @Initialized @Nullable Column $$ @Initialized @NonNull Column $$ @Initialized @NonNull Column.@Initialized @NonNull ForwardIterator $$ @Initialized @Nullable Column next(@Initialized @NonNull Column.@Initialized @NonNull ForwardIterator this) $$ @Initialized @NonNull Iterator<@Initialized @NonNull Column> $$ @Initialized @NonNull Column next(@Initialized @NonNull Iterator<@Initialized @NonNull Column> this) $$ ( 3360, 3366 ) $$ Incompatible return type.
+		public Column next() 
+		       ^
+  found   : @Initialized @Nullable Column
   required: @Initialized @NonNull Column
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:161: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Row $$ ( 2426, 2430 ) $$ incompatible types in assignment.
-				currRow = null;
-				          ^
-  found   : null (NullType)
+  Consequence: method in @Initialized @NonNull Column.@Initialized @NonNull ForwardIterator
+    @Initialized @Nullable Column next(@Initialized @NonNull Column.@Initialized @NonNull ForwardIterator this)
+  cannot override method in @Initialized @NonNull Iterator<@Initialized @NonNull Column>
+    @Initialized @NonNull Column next(@Initialized @NonNull Iterator<@Initialized @NonNull Column> this)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Column.java:213: error: (dereference.of.nullable) $$ 1 $$ currColumn $$ ( 3421, 3431 ) $$ dereference of possibly-null reference currColumn
+			if (currColumn.equals(toColumn)) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:156: error: (override.return) $$ 6 $$ @Initialized @Nullable Row $$ @Initialized @NonNull Row $$ @Initialized @NonNull Row.@Initialized @NonNull BackwardIterator $$ @Initialized @Nullable Row next(@Initialized @NonNull Row.@Initialized @NonNull BackwardIterator this) $$ @Initialized @NonNull Iterator<@Initialized @NonNull Row> $$ @Initialized @NonNull Row next(@Initialized @NonNull Iterator<@Initialized @NonNull Row> this) $$ ( 2335, 2338 ) $$ Incompatible return type.
+		public Row next() 
+		       ^
+  found   : @Initialized @Nullable Row
   required: @Initialized @NonNull Row
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:214: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Row $$ ( 3281, 3285 ) $$ incompatible types in assignment.
-				currRow = null;
-				          ^
-  found   : null (NullType)
+  Consequence: method in @Initialized @NonNull Row.@Initialized @NonNull BackwardIterator
+    @Initialized @Nullable Row next(@Initialized @NonNull Row.@Initialized @NonNull BackwardIterator this)
+  cannot override method in @Initialized @NonNull Iterator<@Initialized @NonNull Row>
+    @Initialized @NonNull Row next(@Initialized @NonNull Iterator<@Initialized @NonNull Row> this)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:160: error: (dereference.of.nullable) $$ 1 $$ currRow $$ ( 2387, 2394 ) $$ dereference of possibly-null reference currRow
+			if (currRow.equals(toRow)) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:209: error: (override.return) $$ 6 $$ @Initialized @Nullable Row $$ @Initialized @NonNull Row $$ @Initialized @NonNull Row.@Initialized @NonNull ForwardIterator $$ @Initialized @Nullable Row next(@Initialized @NonNull Row.@Initialized @NonNull ForwardIterator this) $$ @Initialized @NonNull Iterator<@Initialized @NonNull Row> $$ @Initialized @NonNull Row next(@Initialized @NonNull Iterator<@Initialized @NonNull Row> this) $$ ( 3190, 3193 ) $$ Incompatible return type.
+		public Row next() 
+		       ^
+  found   : @Initialized @Nullable Row
   required: @Initialized @NonNull Row
+  Consequence: method in @Initialized @NonNull Row.@Initialized @NonNull ForwardIterator
+    @Initialized @Nullable Row next(@Initialized @NonNull Row.@Initialized @NonNull ForwardIterator this)
+  cannot override method in @Initialized @NonNull Iterator<@Initialized @NonNull Row>
+    @Initialized @NonNull Row next(@Initialized @NonNull Iterator<@Initialized @NonNull Row> this)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Row.java:213: error: (dereference.of.nullable) $$ 1 $$ currRow $$ ( 3242, 3249 ) $$ dereference of possibly-null reference currRow
+			if (currRow.equals(toRow)) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/strategies/PrecomputedValues.java:240: error: (assignment) $$ 2 $$ @Initialized @NonNull Pair<@Initialized @NonNull Situation, @Initialized @Nullable Player> $$ @UnknownInitialization @Nullable Pair<@Initialized @NonNull Situation, @Initialized @NonNull Player> $$ ( 5483, 5511 ) $$ incompatible types in assignment.
+				Pair<Situation, Player> tmpKey = Pair.of(successor, opponent);
+				                                        ^
+  found   : @Initialized @NonNull Pair<@Initialized @NonNull Situation, @Initialized @Nullable Player>
+  required: @UnknownInitialization @Nullable Pair<@Initialized @NonNull Situation, @Initialized @NonNull Player>
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/strategies/PrecomputedValues.java:254: error: (argument) $$ 4 $$ arg1 $$ Map.put $$ @Initialized @Nullable Move $$ @Initialized @NonNull Move $$ ( 5748, 5754 ) $$ incompatible argument for parameter arg1 of Map.put.
 			moves.put(key, result);
 			               ^
   found   : @Initialized @Nullable Move
   required: @Initialized @NonNull Move
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:19: error: (initialization.field.uninitialized) $$ 1 $$ blackKing $$ ( 289, 312 ) $$ the default constructor does not initialize field blackKing
-	private King blackKing;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:21: error: (initialization.field.uninitialized) $$ 1 $$ whitePlayer $$ ( 315, 342 ) $$ the default constructor does not initialize field whitePlayer
-	private Player whitePlayer;	
-	               ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:22: error: (initialization.field.uninitialized) $$ 1 $$ whiteKing $$ ( 345, 368 ) $$ the default constructor does not initialize field whiteKing
-	private King whiteKing;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:23: error: (initialization.field.uninitialized) $$ 1 $$ whiteRook $$ ( 370, 393 ) $$ the default constructor does not initialize field whiteRook
-	private Rook whiteRook;
-	             ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Win.java:26: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Win $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Win this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 370, 380 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj)
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Win
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Win this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Draw.java:16: error: (override.param) $$ 7 $$ obj $$ @Initialized @NonNull Object $$ @Initialized @Nullable Object $$ @Initialized @NonNull Draw $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Draw this, @Initialized @NonNull Object p0) $$ @Initialized @NonNull Object $$ @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0) $$ ( 229, 239 ) $$ Incompatible parameter type for obj.
-	public boolean equals(Object obj) {
-	                             ^
-  found   : @Initialized @NonNull Object
-  required: @Initialized @Nullable Object
-  Consequence: method in @Initialized @NonNull Draw
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Draw this, @Initialized @NonNull Object p0)
-  cannot override method in @Initialized @NonNull Object
-    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/strategies/PrecomputedValues.java:266: error: (assignment) $$ 2 $$ @Initialized @NonNull Pair<@Initialized @NonNull Situation, @Initialized @Nullable Player> $$ @UnknownInitialization @Nullable Pair<@Initialized @NonNull Situation, @Initialized @NonNull Player> $$ ( 6041, 6069 ) $$ incompatible types in assignment.
+				Pair<Situation, Player> tmpKey = Pair.of(successor, opponent);
+				                                        ^
+  found   : @Initialized @NonNull Pair<@Initialized @NonNull Situation, @Initialized @Nullable Player>
+  required: @UnknownInitialization @Nullable Pair<@Initialized @NonNull Situation, @Initialized @NonNull Player>
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/PositionTest.java:18: error: (dereference.of.nullable) $$ 1 $$ pos $$ ( 306, 309 ) $$ dereference of possibly-null reference pos
+		assertEquals("F8", pos.toString());
+		                   ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:60: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1430, 1461 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R5), newSituation.getPosition(blackKing));
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:61: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1516, 1547 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R3), newSituation.getPosition(whiteKing));
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/SituationTest.java:62: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1602, 1633 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CH, Row.R8), newSituation.getPosition(whiteRook));
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/PieceTest.java:15: error: (dereference.of.nullable) $$ 1 $$ position $$ ( 260, 268 ) $$ dereference of possibly-null reference position
+			if (position.equals(move.getTo())) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Win.java:22: error: (dereference.of.nullable) $$ 1 $$ player $$ ( 312, 318 ) $$ dereference of possibly-null reference player
+		return "win".hashCode() + player.hashCode();
+		                          ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Win.java:33: error: (dereference.of.nullable) $$ 1 $$ player $$ ( 474, 480 ) $$ dereference of possibly-null reference player
+		return player.equals(other.player);
+		       ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/Game.java:39: error: (dereference.of.nullable) $$ 1 $$ move.getPiece() $$ ( 764, 779 ) $$ dereference of possibly-null reference move.getPiece()
+		if (move.getPiece().getPlayer().equals(computer)) {
+		                 ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:29: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 599, 630 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CH, Row.R6), it.next());		
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:46: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1111, 1142 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:47: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1171, 1202 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CC, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:48: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1231, 1262 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:49: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1291, 1322 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CE, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:50: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1351, 1382 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:51: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1411, 1442 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CG, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:52: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1471, 1502 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CH, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:66: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1805, 1836 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CH, Row.R8), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:67: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1865, 1896 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CG, Row.R8), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:68: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1925, 1956 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R8), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:69: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 1985, 2016 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CE, Row.R8), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:87: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 2495, 2526 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R6), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:88: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 2555, 2586 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R5), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:89: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 2615, 2646 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R4), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:103: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 2949, 2980 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R1), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:104: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3009, 3040 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R2), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:105: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3069, 3100 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:106: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3129, 3160 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R4), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:124: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3648, 3679 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R4), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:125: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3708, 3739 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CE, Row.R5), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:126: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 3768, 3799 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R6), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:140: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4112, 4143 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CC, Row.R6), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:141: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4172, 4203 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R5), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:155: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4515, 4546 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CA, Row.R8), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:156: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4575, 4606 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CB, Row.R7), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:157: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4635, 4666 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CC, Row.R6), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:158: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4695, 4726 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CD, Row.R5), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:159: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4755, 4786 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CE, Row.R4), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:160: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4815, 4846 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:161: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4875, 4906 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CG, Row.R2), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:162: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 4935, 4966 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CH, Row.R1), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:176: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 5278, 5309 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CG, Row.R3), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:177: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 5338, 5369 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CF, Row.R4), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/core/RangeTest.java:178: error: (argument) $$ 4 $$ expected $$ Assert.assertEquals $$ @Initialized @Nullable Position $$ @Initialized @NonNull Object $$ ( 5398, 5429 ) $$ incompatible argument for parameter expected of Assert.assertEquals.
+		assertEquals(Position.get(Column.CE, Row.R5), it.next());
+		                         ^
+  found   : @Initialized @Nullable Position
+  required: @Initialized @NonNull Object
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/CLIAdapter.java:81: error: (argument) $$ 4 $$ in $$ BufferedInputStream constructor $$ @Initialized @Nullable InputStream $$ @Initialized @NonNull InputStream $$ ( 2316, 2318 ) $$ incompatible argument for parameter in of BufferedInputStream constructor.
 			in = new ObjectInputStream(new BufferedInputStream(is));
 			                                                   ^
@@ -172,11 +389,6 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/CLIAdapter.java:81: er
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/CLIAdapter.java:151: error: (dereference.of.nullable) $$ 1 $$ line $$ ( 3527, 3531 ) $$ dereference of possibly-null reference line
 				String[] tokens = line.split("-");
 				                  ^
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/CLIAdapter.java:238: error: (argument) $$ 4 $$ line $$ Position.get $$ @Initialized @Nullable String $$ @Initialized @NonNull String $$ ( 5328, 5332 ) $$ incompatible argument for parameter line of Position.get.
-				Position result = Position.get(line);
-				                               ^
-  found   : @Initialized @Nullable String
-  required: @Initialized @NonNull String
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:27: error: (method.invocation) $$ 3 $$ setTitle(java.lang.String) $$ @UnderInitialization(javax.swing.JFrame.class) @NonNull Frame $$ @Initialized @NonNull Frame $$ ( 445, 471 ) $$ call to setTitle(java.lang.String) not allowed on the given receiver.
 		setTitle("Chess Endgames");
 		        ^
@@ -197,6 +409,11 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:31: er
 		         ^
   found   : @UnderInitialization(javax.swing.JFrame.class) @NonNull JFrame
   required: @Initialized @NonNull JFrame
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:33: error: (assignment) $$ 2 $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Board.class) @NonNull Board $$ @Initialized @NonNull Board $$ ( 588, 607 ) $$ incompatible types in assignment.
+		board = new Board(listener); 
+		        ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Board.class) @NonNull Board
+  required: @Initialized @NonNull Board
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:39: error: (method.invocation) $$ 3 $$ pack() $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window $$ @Initialized @NonNull Window $$ ( 752, 758 ) $$ call to pack() not allowed on the given receiver.
 		pack();
 		    ^
@@ -212,11 +429,16 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:41: er
 		          ^
   found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
   required: @Initialized @NonNull Window
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Board.java:44: error: (assignment) $$ 2 $$ null (NullType) $$ @Initialized @NonNull Situation $$ ( 1272, 1276 ) $$ incompatible types in assignment.
-	private Situation currentSituation = null;
-	                                     ^
-  found   : null (NullType)
-  required: @Initialized @NonNull Situation
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Window.java:49: error: (method.invocation) $$ 3 $$ setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Board.class) @NonNull Board $$ @Initialized @NonNull Board $$ ( 903, 932 ) $$ call to setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) not allowed on the given receiver.
+		board.setSituation(situation);
+		                  ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Board.class) @NonNull Board
+  required: @Initialized @NonNull Board
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Board.java:53: error: (assignment) $$ 2 $$ @UnderInitialization @NonNull MouseEventListener $$ @Initialized @NonNull MouseEventListener $$ ( 1408, 1416 ) $$ incompatible types in assignment.
+		this.listener = listener;
+		                ^
+  found   : @UnderInitialization @NonNull MouseEventListener
+  required: @Initialized @NonNull MouseEventListener
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Board.java:55: error: (method.invocation) $$ 3 $$ initPanel() $$ @UnderInitialization(javax.swing.JPanel.class) @NonNull Board $$ @Initialized @NonNull Board $$ ( 1423, 1434 ) $$ call to initPanel() not allowed on the given receiver.
 		initPanel();
 		         ^
@@ -257,6 +479,11 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Board.java:136: er
 		                                 ^
   found   : null (NullType)
   required: @Initialized @NonNull ImageObserver
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/Board.java:198: error: (method.invocation) $$ 3 $$ onMouseClicked(cz.dusanrychnovsky.chessendgames.core.Position) $$ @UnderInitialization @NonNull MouseEventListener $$ @Initialized @NonNull MouseEventListener $$ ( 3916, 3949 ) $$ call to onMouseClicked(cz.dusanrychnovsky.chessendgames.core.Position) not allowed on the given receiver.
+		listener.onMouseClicked(position);
+		                       ^
+  found   : @UnderInitialization @NonNull MouseEventListener
+  required: @Initialized @NonNull MouseEventListener
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/StatusBar.java:26: error: (method.invocation) $$ 3 $$ setPreferredSize(java.awt.Dimension) $$ @UnderInitialization(javax.swing.JPanel.class) @NonNull JComponent $$ @Initialized @NonNull JComponent $$ ( 395, 435 ) $$ call to setPreferredSize(java.awt.Dimension) not allowed on the given receiver.
 		setPreferredSize(new Dimension(424, 18));
 		                ^
@@ -267,9 +494,6 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/StatusBar.java:27:
 		             ^
   found   : @UnderInitialization(javax.swing.JPanel.class) @NonNull JComponent
   required: @Initialized @NonNull JComponent
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:57: error: (initialization.fields.uninitialized) $$ 1 $$ game, currentState $$ ( 1554, 1964 ) $$ the constructor does not initialize fields: game, currentState
-	public GUIAdapter() throws ClassNotFoundException, IOException 
-	       ^
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:62: error: (argument) $$ 4 $$ in $$ BufferedInputStream constructor $$ @Initialized @Nullable InputStream $$ @Initialized @NonNull InputStream $$ ( 1825, 1827 ) $$ incompatible argument for parameter in of BufferedInputStream constructor.
 		ObjectInputStream in = new ObjectInputStream(new BufferedInputStream(is));
 		                                                                     ^
@@ -280,16 +504,54 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:69
 		         ^
   found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
   required: @Initialized @NonNull Window
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:69: error: (argument) $$ 4 $$ listener $$ Window constructor $$ @UnderInitialization @NonNull GUIAdapter $$ @Initialized @NonNull MouseEventListener $$ ( 1941, 1945 ) $$ incompatible argument for parameter listener of Window constructor.
-		window = new Window(this);
-		                    ^
-  found   : @UnderInitialization @NonNull GUIAdapter
-  required: @Initialized @NonNull MouseEventListener
-source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:70: error: (method.invocation) $$ 3 $$ initGame() $$ @UnderInitialization @NonNull GUIAdapter $$ @Initialized @NonNull GUIAdapter $$ ( 1950, 1960 ) $$ call to initGame() not allowed on the given receiver.
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:70: error: (method.invocation) $$ 3 $$ initGame() $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.GUIAdapter.class) @NonNull GUIAdapter $$ @Initialized @NonNull GUIAdapter $$ ( 1950, 1960 ) $$ call to initGame() not allowed on the given receiver.
 		initGame();
 		        ^
-  found   : @UnderInitialization @NonNull GUIAdapter
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.GUIAdapter.class) @NonNull GUIAdapter
   required: @Initialized @NonNull GUIAdapter
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:80: error: (method.invocation) $$ 3 $$ setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window $$ @Initialized @NonNull Window $$ ( 2056, 2104 ) $$ call to setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) not allowed on the given receiver.
+		window.setSituation(currentState.getSituation());
+		                   ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
+  required: @Initialized @NonNull Window
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:81: error: (method.invocation) $$ 3 $$ setStatus(java.lang.String) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window $$ @Initialized @NonNull Window $$ ( 2108, 2157 ) $$ call to setStatus(java.lang.String) not allowed on the given receiver.
+		window.setStatus(currentState.getStatusMessage());
+		                ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
+  required: @Initialized @NonNull Window
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:87: error: (dereference.of.nullable) $$ 1 $$ currentState $$ ( 2242, 2254 ) $$ dereference of possibly-null reference currentState
+		currentState = currentState.handle(position);
+		               ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:90: error: (method.invocation) $$ 3 $$ setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window $$ @Initialized @NonNull Window $$ ( 2338, 2375 ) $$ call to setSituation(cz.dusanrychnovsky.chessendgames.core.Situation) not allowed on the given receiver.
+		window.setSituation(currentSituation);
+		                   ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
+  required: @Initialized @NonNull Window
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:93: error: (method.invocation) $$ 3 $$ setStatus(java.lang.String) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window $$ @Initialized @NonNull Window $$ ( 2440, 2471 ) $$ call to setStatus(java.lang.String) not allowed on the given receiver.
+		window.setStatus(statusMessage);
+		                ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Window
+  required: @Initialized @NonNull Window
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:95: error: (method.invocation) $$ 3 $$ repaint() $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Component $$ @Initialized @NonNull Component $$ ( 2478, 2494 ) $$ call to repaint() not allowed on the given receiver.
+		window.repaint();
+		              ^
+  found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.Window.class) @NonNull Component
+  required: @Initialized @NonNull Component
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:252: error: (dereference.of.nullable) $$ 1 $$ position $$ ( 5202, 5210 ) $$ dereference of possibly-null reference position
+			if (position.isNeighbour(currSituation.getPosition(blackKing))) {
+			    ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:299: error: (dereference.of.nullable) $$ 1 $$ game $$ ( 6059, 6063 ) $$ dereference of possibly-null reference game
+			Situation currSituation = game.getCurrentSituation();
+			                          ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:334: error: (dereference.of.nullable) $$ 1 $$ game $$ ( 6747, 6751 ) $$ dereference of possibly-null reference game
+			return game.getCurrentSituation();
+			       ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:363: error: (dereference.of.nullable) $$ 1 $$ game $$ ( 7223, 7227 ) $$ dereference of possibly-null reference game
+			return game.getCurrentSituation();
+			       ^
+source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/GUIAdapter.java:368: error: (dereference.of.nullable) $$ 1 $$ game $$ ( 7336, 7340 ) $$ dereference of possibly-null reference game
+			return "Game finished - " + game.getCurrentSituation().getResult();
+			                            ^
 source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/SplashScreen.java:17: error: (method.invocation) $$ 3 $$ setUndecorated(boolean) $$ @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.SplashScreen.class) @NonNull Frame $$ @Initialized @NonNull Frame $$ ( 345, 365 ) $$ call to setUndecorated(boolean) not allowed on the given receiver.
 		setUndecorated(true);
 		              ^
@@ -320,4 +582,4 @@ source/url9d32402837/src/cz/dusanrychnovsky/chessendgames/gui/SplashScreen.java:
 		          ^
   found   : @UnderInitialization(cz.dusanrychnovsky.chessendgames.gui.SplashScreen.class) @NonNull Window
   required: @Initialized @NonNull Window
-60 errors
+130 errors
