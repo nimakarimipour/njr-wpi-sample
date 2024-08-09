@@ -1,7 +1,5 @@
 '''
-This script runs checker-framework on all the benchmarks.
-Fill in the correct values for the macros at
-the top of the file before executing.
+This script runs checker-framework nullness checker in the source folder.
 '''
 import os
 
